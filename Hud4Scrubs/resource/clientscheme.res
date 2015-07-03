@@ -2554,6 +2554,17 @@ Scheme
 				"antialias" "1"
 			}
 		}
+		NeouBoldOutline22
+		{
+			"1"
+			{
+				"name"		"Neou Bold"
+				"tall"		"22"
+				"antialias" "1"
+				"outline"	"1"
+			}
+		}
+
 		
 		NeouBolde22
 		{

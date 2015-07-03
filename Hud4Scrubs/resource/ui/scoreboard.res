@@ -13,19 +13,18 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"		"0"
+		"medal_width"		"15"
 		"avatar_width"		"57"	[$WIN32]
-		"avatar_width"		"0"		[$X360]
-		"name_width"		"114"	[$WIN32]
-		"name_width"		"150"	[$X360]
+		"name_width"		"118"	[$WIN32]
+		"name_width_short"	"85"	[$WIN32]		
 		"status_width"		"15"	[$WIN32]
-		"status_width"		"12"	[$X360]
 		"nemesis_width"		"15"	[$WIN32]
-		"nemesis_width"		"20"	[$X360]
 		"class_width"		"15"	[$WIN32]
-		"class_width"		"20"	[$X360]
 		"score_width"		"25"
 		"ping_width"		"23"	[$WIN32]
-		"ping_width"		"50"	[$X360]		// Larger to push the value off the edge
+		"stats_width"		"30"
+		"killstreak_width"	"20"
+
 	}
 	"BlueScoreBG"
 	{
@@ -82,10 +81,10 @@
 	
 		"ControlName"	"ImagePanel"
 		"fieldName"		"MainRedBG"
-		"xpos"			"623"
+		"xpos"			"623" //623
 		"ypos"			"110"
 		"zpos"			"0"
-		"wide"			"320"
+		"wide"			"320"	//320
 		"tall"			"300"
 		"visible"		"1"
 		"visible_minmode"	"0"
@@ -253,8 +252,6 @@
 		"zpos"			"4"
 		"wide"			"120"
 		"tall"			"55"
-		"tall_hidef"	"75"
-		"tall_lodef"	"75"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -274,8 +271,6 @@
 		"labelText"		"%redteamscore%"
 		"textAlignment"		"west"
 		"xpos"			"331"
-		"xpos_lodef"	"311"
-		"xpos_hidef"	"351"
 		"ypos"			"13"
 		"zpos"			"4"
 		"wide"			"120"
@@ -389,16 +384,11 @@
 	{
 		"ControlName"	"SectionedListPanel"
 		"fieldName"		"RedPlayerList"
-		"xpos"			"620"
-		"xpos_lodef"	"304"
-		"xpos_hidef"	"334"
+		"xpos"			"620"	//620
 		"ypos"			"110"
 		"zpos"			"20"
-		"wide"			"310"
-		"wide_lodef"	"267"
-		"wide_hidef"	"277"
+		"wide"			"310" //310
 		"tall"			"280"	[$WIN32]
-		"tall"			"255"	[$X360]
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
@@ -549,7 +539,7 @@
 		
 		if_mvm
 		{
-			"visible"		"1"
+			"visible"		"1"	
 			"wide"			"175"
 		}
 	}	

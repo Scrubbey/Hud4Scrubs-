@@ -62,12 +62,12 @@
 	HudMedicCharge
 	{
 		"fieldName"		"HudMedicCharge"
-		"visible"		"1"
-		"enabled"		"1"
-		"xpos"			"c-115"	[$WIN32]
-		"ypos"			"250"	[$WIN32]
-		"wide"			"200"
-		"tall"			"120"
+		"visible" "1"
+		"enabled" "1"
+		"xpos"	"c90"	[$WIN32]
+		"ypos"	"c94"	[$WIN32]
+		"wide"	"250"
+		"tall"	"120"
 	}
 	
 	HudDemomanCharge

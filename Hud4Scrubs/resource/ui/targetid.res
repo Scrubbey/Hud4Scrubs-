@@ -1,5 +1,33 @@
 "Resource/UI/TargetID.res"
 {
+	"TargetBG"
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"TargetBG"
+		"xpos"			"0"
+		"ypos"			"13"
+		"zpos"			"-1"
+		"wide"			"640"
+		"tall"			"40"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"0"
+		"image"			"../hud/color_panel_brown"
+		"scaleImage"		"1"
+		"teambg_1"		"../hud/color_panel_brown"
+		"teambg_2"		"../hud/color_panel_red"
+		"teambg_2_lodef"	"../hud/color_panel_red"
+		"teambg_3"		"../hud/color_panel_blu"
+		"teambg_3_lodef"	"../hud/color_panel_blu"
+
+		"src_corner_height"		"23"				// pixels inside the image
+		"src_corner_width"		"23"
+			
+		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 	"0"	
+	}
+
 	"TargetIDBG"
 	{
 		"ControlName"		"CTFImagePanel"
@@ -9,10 +37,10 @@
 		"zpos"			"-1"
 		"wide"			"252"
 		"tall"	 		"50"
-		"autoResize"		"0"
+		"autoResize"		"1"
 		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"0"
+		"visible"		"1"
+		"enabled"		"1"
 		"image"			"../hud/color_panel_brown"
 		"scaleImage"		"1"
 		"teambg_1"		"../hud/color_panel_brown"
@@ -24,9 +52,10 @@
 		"src_corner_height"		"23"				// pixels inside the image
 		"src_corner_width"		"23"
 			
-		"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"5"	
+		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 	"0"	
 	}
+
 	"TargetIDBG_Spec_Blue"
 	{
 		"ControlName"		"ScalableImagePanel"
@@ -39,15 +68,15 @@
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 		"image"			"../hud/color_panel_blu"
 		"image_lodef"	"../hud/color_panel_blu"
 		
 		"src_corner_height"		"23"				// pixels inside the image
 		"src_corner_width"		"23"
 			
-		"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"5"
+		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 	"0"
 	}
 	"TargetIDBG_Spec_Red"
 	{
@@ -61,35 +90,33 @@
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 		"image"			"../hud/color_panel_red"
 		"image_lodef"	"../hud/color_panel_red"
-		
+		"Fillcolor"		"100 0 0 100"
 		"src_corner_height"		"23"				// pixels inside the image
 		"src_corner_width"		"23"
 			
-		"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"5"
+		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 	"0"
 	}
 	
 	"TargetNameLabel"
 	{	
 		"ControlName"		"Label"
 		"fieldName"		"TargetNameLabel"
-		"font"			"NeouBold20"
+		"font"			"NeouBold12"
 		"xpos"			"34"
-		"xpos_minmode"	"30"
-		"ypos"			"5"
-		"ypos_minmode"	"5"
+		"ypos"			"2"
 		"zpos"			"1"
-		"wide"			"640"
+		"wide"			"210"
 		"tall"			"24"
-		"autoResize"		"0"
+		"autoResize"	"1"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"%targetname%"
-		"textAlignment"		"North-West"
+		"textAlignment"		"west"
 		"dulltext"		"0"
 		"brighttext"		"0"
 	}
@@ -97,13 +124,13 @@
 	{	
 		"ControlName"		"Label"
 		"fieldName"		"TargetDataLabel"
-		"font"			"NeouBold20"
+		"font"			"NeouBold16"
 		"xpos"			"34"
 		"ypos"			"20"	[$WIN32]
 		"zpos"			"1"
 		"wide"			"280"
 		"tall"			"15"
-		"autoResize"		"0"
+		"autoResize"		"1"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
@@ -116,17 +143,19 @@
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"		"SpectatorGUIHealth"
-		"xpos"			"-1"
-		"ypos"			"2"
-		"wide"			"35"
-		"tall"			"32"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"			"32"
+		"tall"			"40"
 		"visible"		"1"
 		"enabled"		"1"	
 		"HealthBonusPosAdj"	"10"
 		"HealthDeathWarning"	"0.49"
-		"TFFont"		"HudFontSmall"
+		"TFFont"		"Biko12"
 		"HealthDeathWarningColor"	"HUDDeathWarning"
 		"TextColor"		"HudOffWhite"
+
+		
 	}	
 	
 	"AmmoIcon"
@@ -134,12 +163,10 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"AmmoIcon"
 		"xpos"			"34"
-		"xpos_minmode"	"30"
 		"ypos"			"21"
-		"ypos_minmode"	"19"
 		"zpos"			"12"
-		"wide"			"8"
-		"tall"			"8"
+		"wide"			"12"
+		"tall"			"12"
 		"visible"		"0"
 		"enabled"		"1"
 		"image"			"../hud/leaderboard_class_heavy"
@@ -167,7 +194,7 @@
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"		"MoveableSubPanel"
-		"xpos"			"0"
+		"xpos"			"9999" // 0
 		"ypos"			"0"
 		"zpos"			"-5"
 		"wide"			"32"
@@ -179,16 +206,31 @@
 		{
 			"ControlName"	"CIconPanel"
 			"fieldName"		"MoveableIconBG"
-			"xpos"			"0"
+			"xpos"			"0" // 0
 			"ypos"			"0"
 			"zpos"			"0"
 			"wide"			"10"
 			"tall"			"36"
-			"visible"		"1"
-			"enabled"		"1"
+			"visible"		"0"
+			"enabled"		"0"
 			"icon"			"obj_status_alert_background_tall_nocolor"
 			"iconColor"		"HudBlack"
 			"scaleImage"	"1"
+		}
+		"MovableIconBG"
+		{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"MoveableIconBG"
+		"xpos"			"5"
+		"ypos"			"0"
+		"zpos"			"0"
+		"wide"			"70"
+		"tall"			"50"
+		"visible"		"1"
+		"enabled"		"1"	
+		"Fillcolor"		"0 0 0 100"
+		"autoResize"		"0"
+
 		}
 		
 		"MoveableIcon"
